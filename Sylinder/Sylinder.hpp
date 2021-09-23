@@ -83,6 +83,20 @@ class Sylinder {
     double velBrown[3];   ///< Brownian velocity
     double omegaBrown[3]; ///< Brownian angular velocity
 
+    // ******** BEGIN < 09-22-2021, SA> ********
+    int numObjBound = 0;
+    
+    /**
+    * @brief Set number of bound objects
+    *
+    * necessary for bound object saturation
+    * @param newPos
+    */
+    void setNumObjBound(int &num_bound) {
+        numObjBound = num_bound;
+    }
+    // ******** END < 09-22-2021, SA> ********
+
     /**
      * @brief Construct a new Sylinder object
      *
